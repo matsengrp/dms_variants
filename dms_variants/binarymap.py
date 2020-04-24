@@ -293,6 +293,8 @@ class BinaryMap:
                  substitutions_col='aa_substitutions',
                  func_score_col='func_score',
                  func_score_var_col='func_score_var',
+                 stab_score_col='stab_score',
+                 stab_score_var_col='stab_score_var',
                  n_pre_col='pre_count',
                  n_post_col='post_count',
                  cols_optional=True,
@@ -307,6 +309,8 @@ class BinaryMap:
         for col, attr, dtype, lim_min, lim_max in [
                 (func_score_col, 'func_scores', float, None, None),
                 (func_score_var_col, 'func_scores_var', float, 0, None),
+                (stab_score_col, 'stab_scores', float, None, None),
+                (stab_score_var_col, 'stab_scores_var', float, 0, None),
                 (n_pre_col, 'n_pre', int, 0, None),
                 (n_post_col, 'n_post', int, 0, None),
                 ]:
